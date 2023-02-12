@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="nav">
+    <%- include('nav') %>
+</div>
+
+    <div class="trending">
+        <p class="trending-text">TRENDING NOW</p>
+    </div>
+
+        <section class="news-list">
+
+            <div class="news">
+                <div class="black-burger-news">
+                    <a href="#" class="black-burger"><p class="black-burger-news-text">Black Burger Thick and Hearty Sauce has been dubbed the Halloween Whopper</p></a>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="people-eat-burger-news">
+                    <a href="#" class="people-eat-burger"><p class="people-eat-burger-news-text">Americans consume an average of 2.4 hamburgers per day</p></a>
+             </div>
+            </div>
+
+            <div class="news">
+                <div class="formulation-burger-news">
+                    <a href="#" class="formulation-burger"><p class="formulation-burger-news-text">Formulation of Hamburgers made from different types of meat</p></a>
+             </div>
+            </div>
+
+        </section>
+
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+    body{
+        background-image: url('https://cdn.wallpapersafari.com/26/9/fCkEmv.jpg');
+        background-size: 100%
+    }
+
+    .nav{
+        padding-bottom: 230px;
+    }
+
+    .trending{
+        background-color: white;
+        height: 40px;
+        width: 150px;
+        margin-left: 25px;
+        margin-bottom: 35px;
+    }
+
+    .trending-text{
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding-left: 18px;
+        padding-top: 10px;
+    }
+
+    .news-list{
+        display: flex;
+        padding-left: 25px;
+        padding-bottom: 50px;
+        width: 200px;
+    }
+
+    .black-burger-news{
+        background-image: url('https://i.insider.com/56057b299dd7cc11008bd1b2?width=1000&format=jpeg&auto=webp');
+        background-size:100%;
+        height: 63vh;
+        width: 85vh;
+        cursor: pointer;
+    }
+
+    .black-burger-news-text{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 320px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .people-eat-burger-news{
+        background-image: url('https://images0.persgroep.net/rcs/hciuEuTS5aSG3UyfJyUfJOt07Mc/diocontent/203305275/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8');
+        background-size: 140%;
+        background-position: left;
+        height: 63vh;
+        width: 55vh;
+        cursor: pointer;
+    }
+
+    .people-eat-burger-news-text{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .formulation-burger-news{
+        background-image: url('https://www.you.co.uk/wp-content/uploads/2019/05/burger1.jpg');
+        background-size: 158%;
+        background-position: center;
+        height: 63vh;
+        width: 55vh;
+        cursor: pointer;
+    }
+
+    .formulation-burger-news-text{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 360px;
+        font-size: 23px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .black-burger-news-text:hover,.black-burger-news-text:focus{
+        color: gold;
+    }
+
+    .people-eat-burger-news-text:hover,.people-eat-burger-news-text:focus{
+        color: gold;
+    }
+
+    .formulation-burger-news-text:hover,.formulation-burger-news-text:focus{
+        color: gold;
+    }
+
+    a:hover,a:focus{
+        color: gold;
+    }
+
+
+</style>
+
+</html>
